@@ -10,7 +10,7 @@ import { routes } from "./routes";
 
 import logo from "../logo.svg";
 
-const Navigation = () => {
+const LazyLoadNavigation = () => {
   return (
     <Suspense fallback={null}>
       <BrowserRouter>
@@ -47,4 +47,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default LazyLoadNavigation;

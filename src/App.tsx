@@ -1,9 +1,11 @@
-import Navigation from "./routes/Navigation";
+// import LazyLoadNavigation from "./routes/LazyLoadNavigation";
+import CPNavigation from "./routes/CPNavigation";
 
 const App = () => {
   return (
     <>
-      <Navigation />
+      {/* <LazyLoadNavigation /> */}
+      <CPNavigation />
     </>
   );
 };
