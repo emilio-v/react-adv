@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -11,7 +12,7 @@ import logo from "../logo.svg";
 
 const Navigation = () => {
   return (
-    <>
+    <Suspense fallback={null}>
       <BrowserRouter>
         <div className="main-layout">
           <nav>
@@ -42,7 +43,7 @@ const Navigation = () => {
           </Routes>
         </div>
       </BrowserRouter>
-    </>
+    </Suspense>
   );
 };
 
